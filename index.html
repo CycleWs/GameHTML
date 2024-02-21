@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <title>Cellble</title>
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <div class="select__header">
+                <div class="text__header">
+                    <a href="" class="game__mode">CELLBIT</a>
+                    <a href="" class="game__mode">ORDEM PARANORMAL</a>
+                    <a href="" class="game__mode">QSMP</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main__section">
+            <div class="game__title">
+                <h1 class="title"> CELLBLE </h1>
+            </div>
+        </section>
+        <section class="game__section">
+            <div id="video_container">
+                <iframe id="videoFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+            <div class="selection__container">
+                <input type="range" id="yearRange" min="2015" max="2023" oninput="updateVideo()">
+                <input type="range" id="dateRange" min="0" max="100" value="50" oninput="updateVideo()">
+                <p id="currentDate"></p>
+                
+                <button id="guessButton" onclick="checkAnswer()">Guess</button>
+                <p id="result"></p>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            
+        </div>
+    </footer>
+<script src="./scripts/script.js"></script>
+</body>
+</html>
